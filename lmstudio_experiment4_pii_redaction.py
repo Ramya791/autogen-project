@@ -28,6 +28,7 @@ groupchat = GroupChat(
     agents=[user, redactor, reviewer],
     messages=[],
     max_round=3,
+    speaker_selection_method="round_robin"
 )
 
 manager = GroupChatManager(
@@ -60,3 +61,29 @@ user.initiate_chat(manager, message=f"Please redact the following text: {input_t
 # My name is [REDACTED], my email is [REDACTED], and I live in [REDACTED].
 
 # --------------------------------------------------------------------------------
+
+
+
+#o/p with reviewer
+# (venv) PS C:\Users\sri79\autogen-project> python lmstudio_experiment4_pii_redaction.py
+# user (to chat_manager):
+
+# Please redact the following text: My name is Alice, my email is alice123@gmail.com, and I live in Dublin.
+
+# --------------------------------------------------------------------------------
+
+# Next speaker: redactor
+
+# [autogen.oai.client: 09-01 12:13:58] {696} WARNING - Model mistral-7b-instruct-v0.1 is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+# redactor (to chat_manager):
+
+# My name is [REDACTED], my email is [REDACTED], and I live in [REDACTED].
+
+# --------------------------------------------------------------------------------
+
+# Next speaker: reviewer
+
+# [autogen.oai.client: 09-01 12:14:24] {696} WARNING - Model mistral-7b-instruct-v0.1 is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+# reviewer (to chat_manager):
+
+# The text has been properly redacted.
