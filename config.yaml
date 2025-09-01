@@ -1,0 +1,6 @@
+model_client:
+  class: openai_compatible.ChatCompletionClient
+  config:
+    api_base: http://localhost:8000/v1
+    api_key: sk-not-needed
+    model: mistral-7b-openorca.Q4_K_M.gguf

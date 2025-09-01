@@ -1,0 +1,8 @@
+[
+  {
+    "model": "local-model", 
+    "base_url": "http://localhost:8000/v1",
+    "api_key": "NULL",
+    "api_type": "openai"
+  }
+]

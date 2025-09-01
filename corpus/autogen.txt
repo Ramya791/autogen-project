@@ -1,0 +1,1 @@
+AutoGen is a multi-agent orchestration framework developed by Microsoft for building applications powered by large language models. It enables developers to define multiple agents with specific roles and facilitates structured, turn-based communication between them. AutoGen supports integration with both cloud-based APIs and local models using OpenAI-compatible endpoints.

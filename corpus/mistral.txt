@@ -1,0 +1,1 @@
+Mistral 7B is a state-of-the-art open-weight language model developed by Mistral AI. It is known for its efficiency and strong performance on a wide range of natural language processing tasks. The model is available in multiple formats, including GGUF, which is optimized for CPU and GPU inference through libraries like llama.cpp.

@@ -1,0 +1,15 @@
+{
+  "provider": "autogen_ext.models.openai_compatible.ChatCompletionClient",
+  "config": {
+    "base_url": "http://localhost:8000/v1",
+    "api_key": "not-needed",
+    "model": "mistral-7b-openorca.Q4_K_M.gguf",
+    "model_info": {
+      "vision": false,
+      "function_calling": false,
+      "json_output": false,
+      "family": "openai_compatible",
+      "structured_output": false
+    }
+  }
+}

@@ -1,0 +1,37 @@
+# Python venv
+venv/
+.venv/
+
+# Python cache / build
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+build/
+dist/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Env / secrets
+.env
+.env.*
+
+# Outputs / temp
+outputs/
+tmp/
+*.log
+
+# Models / weights (keep these out of Git)
+models/
+*.gguf
+*.bin
+*.pt
+*.safetensors
+
+# LM Studio cache (if present)
+lmstudio_cache/
